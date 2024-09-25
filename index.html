@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Notes Application</title>
+    <link rel="stylesheet" href="sanitize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,20 +13,32 @@
         <h1>My Notes Application</h1>
     </header>
     <main>
-        <section>
-            <h2>Create a New Note</h2>
-            <form id="note-form">
-                <label for="note-text">Title:</label>
-                <textarea id="note-text" placeholder="Enter note title"></textarea>
-                <label for="note-text">Content:</label>
-                <textarea id="note-text" placeholder="Enter note content"></textarea>
-                <button type="submit">Add Note</button>
-            </form>
+        <section class="main-section">
+            <div class="form-container" style="margin-bottom: 20px;">
+                <form id="note-form">
+                    <h2>Create a New Note</h2>
+                    <label for="note-title" class="form_label">Title:</label>
+                    <textarea id="note-title" placeholder="Enter note title"></textarea>
+                    <label for="note-content" class="form-label">Content:</label>
+                    <textarea id="note-content" placeholder="Enter note content"></textarea>
+                    <button type="submit" class="form_button">Add Note</button>
+                </form>
+            </div>
+            <div class="resource-container">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="#" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="#" target="_blank">css-tricks</a></li>
+                    <li><a href="#" target="_blank">My Github</a></li>
+                </ul>
+            </div>
         </section>
         <section>
             <ul id="notes-list"></ul>
         </section>
     </main>
-
-
-
+    <footer>
+        <p>&copy; 2024 My Notes Application</p>
+    </footer>
+</body>
+</html>
